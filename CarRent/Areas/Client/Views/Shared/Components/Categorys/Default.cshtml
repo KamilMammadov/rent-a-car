@@ -1,0 +1,15 @@
+﻿@using CarRent.Areas.Client.ViewModels
+@model List<CateCarViewModel>
+
+<h6 style="color: #234896; font-weight: bold; margin-left: 45%;">Get the Best Offers</h6>
+<h1 style="font-weight: bold;margin-left: 38%;padding-bottom: 2%;">Our <span style="color: #234896;">Featured</span> Cars </h1>
+<div class="car-category">
+    @foreach (var item in Model)
+    {
+   
+            
+        <span id="@item.OrderId"@* class="Active"*@>@item.Name</span>
+ 
+    }
+   
+    </div>

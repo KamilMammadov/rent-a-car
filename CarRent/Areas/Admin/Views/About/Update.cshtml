@@ -1,0 +1,22 @@
+﻿@using CarRent.Database.Models
+@model About
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+<form method="POST" asp-route="admin-about-update">
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Small Header</label>
+        <input class="form-control" id="exampleFormControlInput1" asp-for="@Model.SmallHeader">
+
+        <label for="exampleFormControlInput1">Header:</label>
+        <input class="form-control" id="exampleFormControlInput1" asp-for="@Model.Header">
+
+        <label for="exampleFormControlInput1">tittle:</label>
+        <input class="form-control" id="exampleFormControlInput1" asp-for="@Model.Tittle">
+
+       
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
